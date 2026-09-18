@@ -45,6 +45,14 @@ a{
     border-width: 14px;
 }
 
+@media screen and (max-width: 768px){
+    .container{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 .title-wrap{
     text-align: center;
     height: 50px;
@@ -76,11 +84,16 @@ a{
 .memo-wrap{
     position: relative;
     width: 300px;
-    max-width: 90%;
     margin: 2rem 0;
     padding: 2rem;
     border-radius: 4px;
     z-index: 10;
+}
+
+@media screen and (max-width: 768px){
+    .memo-wrap{
+        width: 200px;
+    }
 }
 
 .memo1{
@@ -117,6 +130,14 @@ a{
     height: 10px;
     justify-content: space-between;
     z-index: 100;
+}
+
+@media screen and (max-width: 768px){
+    .pin-wrap{
+        width: 200px;
+        left: 0;
+        top: 0;
+    }
 }
 
 .pin-left, .pin-right{
