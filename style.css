@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+:root{
+    --text-color: #535353;
+    --main-color: #b7daec;
+    --sub-color: #275e72;
+    --acsent-color: #e49114;
+    --background-color: #e7e7e6;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 2rem;
+}
+
+h1, h2, h3{
+    font-family: "Zen Kurenaido", sans-serif;
+    margin: 0;
+}
+
+ul{
+    list-style-type: disc;
+    padding-inline-start: 20px;
+}
+
+li,a {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--sub-color);
+}
+
+.container{
+    margin: 30px 20px;
+    padding: 20px;
+    background-image: radial-gradient(#54615b 1px, transparent 1px), radial-gradient(#54615b 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-color: #697c73;
+    border-color: #5c4331;
+    border-style: solid;
+    border-width: 14px;
+}
+
+.title-wrap{
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    margin: 1rem auto;
+    font-size: 1.05rem;
+    color: var(--background-color);
+    transform: rotate(-2deg); 
+}
+
+.name-wrap{
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    color: var(--background-color);
+    transform: rotate(-2deg); 
+}
+
+.kanban-wrap{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.memo-wrap{
+    position: relative;
+    width: 300px;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.memo1{
+    background-image: url("images/memo1.png");
+    background-size: cover;
+    transform: rotate(2deg); 
+    top: 8px;
+}
+
+.memo2{
+    background-image: url("images/memo2.png");
+    background-size: cover;
+    transform: rotate(-2deg);
+    top: -8px;
+}
+
+.memo3{
+    background-image: url("images/memo3.png");
+    background-size: cover;
+    transform: rotate(1deg);
+}
+
+.pin-top{
+    position: relative;
+    top: -14px;
+}
+
+.pin-wrap{
+    position: relative;
+    left: -20px;
+    top: 10px;
+    display: flex;
+    width: 340px;
+    height: 10px;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.pin-left, .pin-right{
+    border:var(--acsent-color) solid 8px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 0px #945b35;
+}
+
+.text{
+    margin: 2rem auto;
+}
+
+.short-text{
+    width: 150px;
+}
